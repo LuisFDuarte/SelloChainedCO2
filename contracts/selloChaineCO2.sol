@@ -1,10 +1,10 @@
 //Begin
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.6; // Revisar si se requiere version superior
+pragma solidity ^0.8.6; // Revisar si se requiere version superior
 
 import "@chainlink/contracts/src/v0.8/KeeperCompatible.sol";
-import "@openzeppelin/contracts@4.6.0/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts@4.6.0/utils/Counters.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
+import "@openzeppelin/contracts/utils/Counters.sol";
 
 contract selloChaineCO2 is ERC721, ERC721URIStorage, KeeperCompatibleInterface {
     using Counters for Counters.Counter;
@@ -22,8 +22,8 @@ contract selloChaineCO2 is ERC721, ERC721URIStorage, KeeperCompatibleInterface {
         "https://gateway.pinata.cloud/ipfs/QmdWQe6ZyqzDPQHmiCMZ3NaHBZEqJe6VGnV1AWbveM5HQR",
         "https://gateway.pinata.cloud/ipfs/QmdWQe6ZyqzDPQHmiCMZ3NaHBZEqJe6VGnV1AWbveM5HQR",
         "https://gateway.pinata.cloud/ipfs/QmdWQe6ZyqzDPQHmiCMZ3NaHBZEqJe6VGnV1AWbveM5HQR",
-        "https://gateway.pinata.cloud/ipfs/QmdWQe6ZyqzDPQHmiCMZ3NaHBZEqJe6VGnV1AWbveM5HQR",
-    ]; 
+        "https://gateway.pinata.cloud/ipfs/QmdWQe6ZyqzDPQHmiCMZ3NaHBZEqJe6VGnV1AWbveM5HQR"
+    ];
 
     uint256 lastTimeStamp;
     uint256 interval;
