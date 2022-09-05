@@ -50,3 +50,12 @@ yarn deploy:rinkeby
 ``` bash
 yarn deploy:goerli
 ```
+
+### Generar el documento para la validacion del contrato
+
+Se debe tener en cuenta de eliminar todos los comentarios relacionados a la licencia
+y dejar solo uno al inicio del archivo flatten.txt  
+
+``` bash
+yarn flatten
+```
