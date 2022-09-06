@@ -32,6 +32,7 @@
     "test:deploy": "hardhat run scripts/deploy.js",
     "compile": "hardhat compile",
     "deploy:rinkeby": "NET=rinkeby hardhat run scripts/deploy.js --network rinkeby",
-    "deploy:goerli": "NET=goerli hardhat run scripts/deploy.js --network goerli"
+    "deploy:goerli": "NET=goerli hardhat run scripts/deploy.js --network goerli",
+    "flatten": "hardhat flatten > flatten.txt"
   }
 }
